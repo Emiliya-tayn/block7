@@ -1,1 +1,1 @@
-# https://github.com/Emiliya-tayn/Block7.git
+# https://emiliya-tayn.github.io/Block7/
