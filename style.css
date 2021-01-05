@@ -409,7 +409,8 @@ template {
   height: 40px;
   border: 0;
   border-radius: 50%;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
   .header-btn:hover {
     transform: scale(1.2);
     transition-property: transform;
@@ -1039,7 +1040,8 @@ template {
       font-weight: bold;
       border: 0;
       background-color: #f8f8f8;
-      outline: none; } }
+      outline: none;
+      cursor: pointer; } }
 
 .repair-devices-container .swiper__link {
   width: 40px;
@@ -1112,6 +1114,14 @@ template {
     @media only screen and (min-width: 768px) {
       .price-list-container .swiper-slide:nth-child(4) {
         margin-right: 0; } }
+  .price-list-container .swiper-slide:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    border-bottom: 1px solid #EAEAEA; }
   .price-list-container .swiper-slide .swiper__item {
     font-size: 14px;
     flex-wrap: wrap;
@@ -1129,25 +1139,26 @@ template {
       @media only screen and (min-width: 1440px) {
         .price-list-container .swiper-slide .swiper__item_price {
           flex-basis: 15%; } }
-  .price-list-container .swiper-slide .swiper__link {
-    width: 119px;
-    height: 14px;
-    border-radius: 30px;
+  .price-list-container .swiper-slide .swiper__button {
+    width: 120px;
+    height: 32px;
+    border-radius: 32px;
+    border: none;
     background: no-repeat 100px center url(./static/dropdown.svg) #FF3E79;
     color: white;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
-    padding: 8px 0 10px 12px;
     position: absolute;
     left: 115px;
-    top: 154px; }
+    top: 154px;
+    cursor: pointer; }
     @media only screen and (min-width: 768px) {
-      .price-list-container .swiper-slide .swiper__link {
+      .price-list-container .swiper-slide .swiper__button {
         top: 13px;
         left: 575px; } }
     @media only screen and (min-width: 1440px) {
-      .price-list-container .swiper-slide .swiper__link {
+      .price-list-container .swiper-slide .swiper__button {
         left: 900px; } }
 
 .swiper__item_services::before {
@@ -1367,7 +1378,8 @@ template {
   background: no-repeat 105px center url(./static/dropdown.svg) #FF3E79;
   position: absolute;
   right: 32px;
-  top: 503px; }
+  top: 503px;
+  cursor: pointer; }
 
 .request-call-container {
   width: 320px;
@@ -1465,7 +1477,8 @@ template {
   background: no-repeat 105px center url(./static/dropdown.svg) #FF3E79;
   position: absolute;
   right: 32px;
-  top: 200px; }
+  top: 200px;
+  cursor: pointer; }
 
 
 /*# sourceMappingURL=style.css.map*/
